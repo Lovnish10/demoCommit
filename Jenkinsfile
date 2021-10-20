@@ -9,12 +9,7 @@ pipeline{
         stage('Build'){
             
             steps{
-                sh 'echo "Hello world"'
-                
-                sh ''' 
-                    echo "Multiline shell script works"
-                    ls -lah
-                '''
+                echo "Hello world"
             }
         }
         
