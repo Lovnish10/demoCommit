@@ -21,7 +21,7 @@ stage('process'){
     name()
 }
 stage('display'){
-    code.dispay()
+    code.dispay(this)
 }
 
 }
