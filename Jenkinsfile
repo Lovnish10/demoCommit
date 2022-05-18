@@ -1,12 +1,12 @@
 node(){
-def display = false;
-
+def display = true;
+def code = load 'code.groovy'
 stage('input'){
     println("taking input")
 }
 stage('compile'){
 
-     println("compile code")
+     code.complie()
 }
 if(!display){
     return ;
@@ -18,7 +18,7 @@ stage('process'){
     println("proccessing code")
 }
 stage('display'){
-    println("display code")
+    code.dispay()
 }
 
 }
