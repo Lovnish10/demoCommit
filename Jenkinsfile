@@ -1,6 +1,9 @@
 node(){
 def display = true;
 def code = load 'code.groovy'
+    stage('checkout'){
+     checkout scm
+    }
 stage('input'){
     println("taking input")
 }
