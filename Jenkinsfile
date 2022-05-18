@@ -1,5 +1,5 @@
 
-def myName  ="love Jain"
+def myName 
 node(){
 def display = true;
 def code = load 'code.groovy'
@@ -17,7 +17,9 @@ stage('process'){
     if(!display){
     return ;
 }
+
     println("proccessing code")
+    myName = "love"
     name()
 }
 stage('display'){
