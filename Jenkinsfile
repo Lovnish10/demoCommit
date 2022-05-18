@@ -12,6 +12,9 @@ if(!display){
     return ;
 }
 stage('process'){
+    if(!display){
+    return ;
+}
     println("proccessing code")
 }
 stage('display'){
