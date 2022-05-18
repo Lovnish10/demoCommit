@@ -1,18 +1,18 @@
+node(){
+def display = false;
 
+stage('input'){
+    println("taking input")
+}
+stage('compile'){
 
-pipeline{
-    
-    agent any
-    
-    stages{
-        
-        stage('Build'){
-            
-            steps{
-                echo "Hello world"
-            }
-        }
-        
-    }
-    
+     println("compile code")
+}
+stage('process'){
+    println("proccessing code")
+}
+stage('display'){
+    println("display code")
+}
+
 }
