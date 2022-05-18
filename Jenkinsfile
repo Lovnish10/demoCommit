@@ -8,6 +8,9 @@ stage('compile'){
 
      println("compile code")
 }
+if(!display){
+    return ;
+}
 stage('process'){
     println("proccessing code")
 }
