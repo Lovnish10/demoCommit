@@ -22,7 +22,7 @@ stage('process'){
     println("proccessing code")
 }
 stage('display'){
-    code.dispay(tihs)
+    code.dispay(this)
 }
 
 }
