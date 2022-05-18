@@ -1,10 +1,8 @@
+
+def myName  ="love Jain"
 node(){
 def display = true;
-def code
-    stage('checkout'){
-     checkout scm
-        code = load 'code.groovy'
-    }
+def code = load 'code.groovy'
 stage('input'){
     println("taking input")
 }
@@ -20,9 +18,17 @@ stage('process'){
     return ;
 }
     println("proccessing code")
+    name()
 }
 stage('display'){
-    code.dispay(this)
+    code.dispay()
 }
 
+}
+
+
+def name(){
+    stage('printing name'){
+        println("my name is ${myName}")
+    }
 }
